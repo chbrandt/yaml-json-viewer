@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        { "header": "Content-Type", "operation": "set", "value": "text/plain" },
+        { "header": "Content-Disposition", "operation": "remove" }
+      ]
+    },
+    "condition": {
+      "urlFilter": ".json",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        { "header": "Content-Type", "operation": "set", "value": "text/plain" },
+        { "header": "Content-Disposition", "operation": "remove" }
+      ]
+    },
+    "condition": {
+      "urlFilter": ".yaml",
+      "resourceTypes": ["main_frame"]
+    }
+  },
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        { "header": "Content-Type", "operation": "set", "value": "text/plain" },
+        { "header": "Content-Disposition", "operation": "remove" }
+      ]
+    },
+    "condition": {
+      "urlFilter": ".yml",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
